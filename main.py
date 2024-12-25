@@ -46,7 +46,9 @@ fail_cap = f"**➜ This file Contain Failed Downloads while Downloding \n You Ca
  #counter
 global videocount, pdfcount   #Declare videocount and pdfcount as global variables
 
- processing_request = False   #Variable to track if a request is being processed
+pwdl = os.environ.get("api")
+
+processing_request = False   #Variable to track if a request is being processed
 keyboard = InlineKeyboardMarkup(
     [
         [
