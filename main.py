@@ -62,11 +62,7 @@ update_counts()
 print(f"Video Count: {videocount}, PDF Count: {pdfcount}")
 
 processing_request = False
-Variable
-to
-track if a
-request is being
-processed
+Variable to track if a request is being processed
 keyboard = InlineKeyboardMarkup(
     [
         [
