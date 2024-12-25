@@ -85,17 +85,18 @@ Busy = InlineKeyboardMarkup(
     ]
 )
 
- @bot.on_message(filters.command(["logs"]) )
- async def send_logs(bot: Client, m: Message):
-     try:
+
+@bot.on_message(filters.command(["logs"]) )
+async def send_logs(bot: Client, m: Message):
+    try:
         
-          #Assuming `assist.txt` is located in the current directory
-          with open("Assist.txt", "rb") as file:
-             sent= await m.reply_text("**📤 Sending you ....**")
-             await m.reply_document(document=file)
-             await sent.delete(True)
-     except Exception as e:
-         await m.reply_text(f"Error sending logs: {e}")
+        # Assuming `assist.txt` is located in the current directory
+         with open("Assist.txt", "rb") as file:
+            sent= await m.reply_text("**📤 Sending you ....**")
+            await m.reply_document(document=file)
+            await sent.delete(True)
+    except Exception as e:
+        await m.reply_text(f"Error sending logs: {e}")
 
 
   #List of image URLs
