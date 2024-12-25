@@ -49,20 +49,9 @@ failed
 links
 fail_cap = f"**➜ This file Contain Failed Downloads while Downloding \n You Can Retry them one more time **"
 counter
-# Initialize global variables
-videocount = 0
-pdfcount = 0
+global videocount, pdfcount   Declare videocount and pdfcount as global variables
 
-def update_counts():
-    global videocount, pdfcount
-    videocount += 1
-    pdfcount += 1
-
-update_counts()
-print(f"Video Count: {videocount}, PDF Count: {pdfcount}")
-
-processing_request = False
-Variable to track if a request is being processed
+ processing_request = False   Variable to track if a request is being processed
 keyboard = InlineKeyboardMarkup(
     [
         [
