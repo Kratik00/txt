@@ -40,7 +40,7 @@ bot = Client("bot",
              api_hash=os.environ.get("API_HASH", "b29fb6a928e8b8a3308f8c2d3ba9cfb0"))
 
 owner_id = 7376514183
- Extras
+#Extras
 failed_links = [] List to store failed links
 fail_cap = f"**➜ This file Contain Failed Downloads while Downloding \n You Can Retry them one more time **"
  counter
