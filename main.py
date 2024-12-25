@@ -89,7 +89,7 @@ Busy = InlineKeyboardMarkup(
  async def send_logs(bot: Client, m: Message):
      try:
         
-          Assuming `assist.txt` is located in the current directory
+          #Assuming `assist.txt` is located in the current directory
           with open("Assist.txt", "rb") as file:
              sent= await m.reply_text("**📤 Sending you ....**")
              await m.reply_document(document=file)
