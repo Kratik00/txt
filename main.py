@@ -99,12 +99,15 @@ async def send_logs(bot: Client, m: Message):
         await m.reply_text(f"Error sending logs: {e}")
 
 
-  #List of image URLs
- image_urls = [
-     "https://graph.org/file/5f422748ce4847cd37ef2.jpg",
-     "https://graph.org/file/726869795f1e2d34774b9.jpg",
-      #Add more image URLs as needed
- ]
+# List of image URLs
+image_urls = [
+    "https://telegra.ph/file/f44ee2b0333ab05fd1208-862b0d7c7c7ed2b313.jpg",
+    "https://telegra.ph/file/057d21375c84d1eaa9ca9-6a513c01adeb462d7b.jpg",
+    "https://telegra.ph/file/7b6a1a2f8566624e1c238-d32067926d16f1a73d.jpg",
+    "https://telegra.ph/file/61ea60aad8ab75b475371-c0c3cc78b7ad83f0a4.jpg",
+    "https://telegra.ph/file/6ccb0f9fc50da2eea64ef-c6d07681feb7b7a648.jpg",
+    # Add more image URLs as needed
+]
 
 
 
